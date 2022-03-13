@@ -29,7 +29,15 @@ public class M001MainFrg extends BaseFragment<M001MainViewModel, FrgM001MenuBind
 
     @Override
     protected void initView() {
-
+        App.getInstance().getStorage().setCurrentAnswer(0);
+        App.getInstance().getStorage().setIsClickStop(false);
+        App.getInstance().getStorage().setCurrentQuestion(0);
+        App.getInstance().getStorage().setIsUsed5050(false);
+        App.getInstance().getStorage().setIsClickAvatar(false);
+        App.getInstance().getStorage().setIsUsedSwap(false);
+        App.getInstance().getStorage().setIsUsedCall(false);
+        App.getInstance().getStorage().setIsClickStop(false);
+        App.getInstance().getStorage().setIsUsedAudience(false);
         MediaManager.getInstance().playBG(R.raw.song_info);
         Animation animation = AnimationUtils.loadAnimation(getContext(), R.anim.bg_circle_rotate);
         mBinding.ivRoteMenu.setAnimation(animation);
