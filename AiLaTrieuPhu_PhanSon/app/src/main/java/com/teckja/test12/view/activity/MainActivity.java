@@ -21,15 +21,6 @@ public class MainActivity extends BaseActivity<MainViewModel, ActivityMainBindin
     private static final String TAG = MainActivity.class.getName();
     @Override
     protected void initView() {
-        App.getInstance().getStorage().setCurrentAnswer(0);
-        App.getInstance().getStorage().setIsClickStop(false);
-        App.getInstance().getStorage().setCurrentQuestion(0);
-        App.getInstance().getStorage().setIsUsed5050(false);
-        App.getInstance().getStorage().setIsClickAvatar(false);
-        App.getInstance().getStorage().setIsUsedSwap(false);
-        App.getInstance().getStorage().setIsUsedCall(false);
-        App.getInstance().getStorage().setIsClickStop(false);
-        App.getInstance().getStorage().setIsUsedAudience(false);
         gotoMainScreen();
     }
 
